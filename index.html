@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Al Mahruqi - Professional Services and Consulting">
+    <title>Al Mahruqi - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">Al Mahruqi</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <!-- Navigation menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to Al Mahruqi</h1>
+                    <p class="hero-subtitle">Professional Excellence in Every Project</p>
+                    <p class="hero-description">
+                        We provide comprehensive consulting and professional services 
+                        designed to help your business thrive in today's competitive market.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('services')">
+                            Our Services
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            Get in Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-placeholder">
+                        <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#f0f2f5"/>
+                            <text x="200" y="150" text-anchor="middle" dy=".3em" fill="#666" font-family="Inter, sans-serif" font-size="16">Professional Services</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Al Mahruqi</h2>
+                    <p class="section-subtitle">Excellence Through Experience</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            With years of experience in professional consulting, Al Mahruqi has established 
+                            itself as a trusted partner for businesses seeking innovative solutions and 
+                            strategic guidance.
+                        </p>
+                        <p>
+                            Our commitment to excellence and attention to detail ensures that every project 
+                            we undertake meets the highest standards of quality and professionalism.
+                        </p>
+                        <button class="btn btn-outline" onclick="showMore('about-details')">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">100+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">50+</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="about-details" class="about-details hidden">
+                    <h3>Our Mission</h3>
+                    <p>To provide exceptional consulting services that drive growth and success for our clients.</p>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading consulting firm known for innovation, integrity, and results.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive Solutions for Your Business</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Business Consulting</h3>
+                        <p class="service-description">
+                            Strategic planning and business development services to help your company achieve its goals.
+                        </p>
+                        <button class="btn btn-link" onclick="showServiceDetails('consulting')">
+                            Learn More →
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Performance Optimization</h3>
+                        <p class="service-description">
+                            Improve efficiency and productivity through process optimization and technology integration.
+                        </p>
+                        <button class="btn btn-link" onclick="showServiceDetails('optimization')">
+                            Learn More →
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Quality Assurance</h3>
+                        <p class="service-description">
+                            Comprehensive quality management systems and process improvement methodologies.
+                        </p>
+                        <button class="btn btn-link" onclick="showServiceDetails('quality')">
+                            Learn More →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Portfolio</h2>
+                    <p class="section-subtitle">Recent Projects and Success Stories</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">
+                                <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="200" fill="#e5e7eb"/>
+                                    <text x="150" y="100" text-anchor="middle" dy=".3em" fill="#666" font-size="14">Project 1</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Strategic Planning Initiative</h3>
+                            <p class="portfolio-description">Comprehensive business strategy development for a growing enterprise.</p>
+                            <button class="btn btn-link" onclick="showPortfolioDetails('project1')">
+                                View Details →
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">
+                                <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="200" fill="#e5e7eb"/>
+                                    <text x="150" y="100" text-anchor="middle" dy=".3em" fill="#666" font-size="14">Project 2</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Process Optimization</h3>
+                            <p class="portfolio-description">Streamlined operations resulting in 40% efficiency improvement.</p>
+                            <button class="btn btn-link" onclick="showPortfolioDetails('project2')">
+                                View Details →
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">
+                                <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="300" height="200" fill="#e5e7eb"/>
+                                    <text x="150" y="100" text-anchor="middle" dy=".3em" fill="#666" font-size="14">Project 3</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Quality Management System</h3>
+                            <p class="portfolio-description">Implementation of comprehensive quality standards and procedures.</p>
+                            <button class="btn btn-link" onclick="showPortfolioDetails('project3')">
+                                View Details →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Ready to start your next project?</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <a href="mailto:info@almahruqi.com">info@almahruqi.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <a href="tel:+96812345678">+968 1234 5678</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Office Hours:</strong>
+                            <span>Sunday - Thursday: 8:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact-form" onsubmit="submitForm(event)">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Al Mahruqi</h3>
+                    <p>Professional consulting services for business growth and success.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="showServiceDetails('consulting')">Business Consulting</a></li>
+                        <li><a href="#" onclick="showServiceDetails('optimization')">Performance Optimization</a></li>
+                        <li><a href="#" onclick="showServiceDetails('quality')">Quality Assurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:info@almahruqi.com">info@almahruqi.com</a></p>
+                    <p>Phone: <a href="tel:+96812345678">+968 1234 5678</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Al Mahruqi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success/Error Messages -->
+    <div id="notification" class="notification hidden">
+        <span id="notification-message"></span>
+        <button class="notification-close" onclick="hideNotification()">&times;</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
