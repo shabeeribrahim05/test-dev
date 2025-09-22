@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .weather-dashboard {
+            max-width: 400px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .weather-dashboard h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .weather-form {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .weather-form input {
+            flex: 1;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .weather-form button {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .weather-result {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .error {
+            color: #dc3545;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        @media (max-width: 600px) {
+            .weather-dashboard {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-dashboard">
+        <h2>Weather Dashboard</h2>
+        <form class="weather-form" id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div class="weather-result" id="weatherResult"></div>
+        <div class="error" id="errorMsg"></div>
+    </div>
+    <script src="weather-dashboard.js"></script>
+</body>
+</html>
