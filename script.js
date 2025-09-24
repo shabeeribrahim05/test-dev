@@ -564,7 +564,7 @@ document.addEventListener('keydown', function(e) {
 // Add loading state management
 window.addEventListener('beforeunload', function() {
     // Show loading indicator if needed
-    document.body.style.opacity = '0.7';
+    document.body.classList.add('loading');
 });
 
 // Ensure smooth experience on page visibility change
