@@ -512,8 +512,22 @@ function initializeLazyLoading() {
 function trackPerformance() {
     if ('performance' in window) {
         window.addEventListener('load', () => {
-            const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
-            console.log(`Page load time: ${loadTime}ms`);
+            let loadTime;
+            const navEntries = performance.getEntriesByType && performance.getEntriesByType('navigation');
+            if (navEntries && navEntries.length > 0) {
+                // Use Navigation Timing Level 2 API
+                loadTime = navEntries[0].loadEventEnd - navEntries[0].startTime;
+            } else if (performance.timing) {
+                // Fallback for older browsers
+                loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+            } else {
+                loadTime = undefined;
+            }
+            if (typeof loadTime === 'number' && !isNaN(loadTime)) {
+                console.log(`Page load time: ${loadTime}ms`);
+            } else {
+                console.log('Page load time: unavailable');
+            }
             
             // Track if load time is too slow
             if (loadTime > 3000) {
