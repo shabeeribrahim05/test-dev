@@ -69,11 +69,14 @@
             border-radius: 10px;
             font-size: 1rem;
             outline: none;
-            transition: border-color 0.3s ease;
+            transition: all 0.3s ease;
+            background: white;
         }
 
         .city-input:focus {
             border-color: #0984e3;
+            box-shadow: 0 0 0 3px rgba(9, 132, 227, 0.1);
+            transform: translateY(-1px);
         }
 
         .search-btn {
@@ -107,6 +110,7 @@
             color: white;
             margin-bottom: 20px;
             display: none;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
         }
 
         .weather-card.show {
@@ -165,6 +169,14 @@
             background: rgba(255, 255, 255, 0.1);
             padding: 15px;
             border-radius: 10px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .detail-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
         }
 
         .detail-label {
@@ -185,6 +197,8 @@
             border-radius: 10px;
             margin-bottom: 20px;
             display: none;
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+            font-weight: 500;
         }
 
         .error-message.show {
@@ -196,6 +210,7 @@
             color: #636e72;
             font-size: 1.1rem;
             display: none;
+            font-weight: 500;
         }
 
         .loading.show {
