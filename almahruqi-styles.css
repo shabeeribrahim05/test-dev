@@ -1,0 +1,539 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo .tagline {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.desktop-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.desktop-nav a:hover {
+    color: #4CAF50;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 101;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu-overlay.active {
+    right: 0;
+}
+
+.close-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    line-height: 1;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.close-menu:hover {
+    color: #4CAF50;
+}
+
+.mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    /* Ensure text is always visible */
+    min-height: 50px;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+    color: #4CAF50;
+}
+
+.menu-item:active {
+    background-color: #e0e0e0;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.menu-label {
+    /* Ensure menu labels are always visible with high contrast */
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Inventory Section */
+.inventory-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.car-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.car-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.car-price {
+    font-size: 1.3rem;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.car-details {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.about-section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Listing Details Page */
+.listing-details {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.back-link {
+    display: inline-block;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #45a049;
+}
+
+.listing-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.listing-header h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.listing-price {
+    font-size: 2rem;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.listing-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.listing-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.thumbnail-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-grid img:hover {
+    transform: scale(1.05);
+}
+
+.listing-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-section h2 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.specs-list, .features-list {
+    list-style: none;
+}
+
+.specs-list li, .features-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.specs-list li:last-child, .features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list li {
+    color: #333;
+}
+
+.info-section p {
+    line-height: 1.8;
+    color: #666;
+}
+
+.contact-cta {
+    margin-top: 1rem;
+}
+
+.contact-cta .btn {
+    width: 100%;
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .cars-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Listing page responsive */
+    .listing-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .listing-header h1 {
+        font-size: 2rem;
+    }
+    
+    .listing-price {
+        font-size: 1.5rem;
+    }
+    
+    .thumbnail-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .mobile-menu-overlay {
+        width: 100%;
+        max-width: 100%;
+    }
+}

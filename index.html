@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlMahruqi - Premium Car Dealership</title>
+    <link rel="stylesheet" href="almahruqi-styles.css">
+</head>
+<body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <button class="close-menu" id="closeMenu" aria-label="Close menu">×</button>
+        <nav class="mobile-menu-nav">
+            <a href="#home" class="menu-item">
+                <span class="menu-icon">🏠</span>
+                <span class="menu-label">Home</span>
+            </a>
+            <a href="#about" class="menu-item">
+                <span class="menu-icon">ℹ️</span>
+                <span class="menu-label">About Us</span>
+            </a>
+            <a href="#inventory" class="menu-item">
+                <span class="menu-icon">🚗</span>
+                <span class="menu-label">Inventory</span>
+            </a>
+            <a href="#homepage2" class="menu-item">
+                <span class="menu-icon">📄</span>
+                <span class="menu-label">Homepage 2</span>
+            </a>
+            <a href="#homepage3" class="menu-item">
+                <span class="menu-icon">📄</span>
+                <span class="menu-label">Homepage 3</span>
+            </a>
+            <a href="#contact" class="menu-item">
+                <span class="menu-icon">📞</span>
+                <span class="menu-label">Contact</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>AlMahruqi</h1>
+                    <p class="tagline">Premium Cars</p>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#inventory">Inventory</a>
+                    <a href="#homepage2">Homepage 2</a>
+                    <a href="#homepage3">Homepage 3</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Find Your Dream Car</h2>
+                <p>Discover our exclusive collection of premium vehicles</p>
+                <div class="hero-buttons">
+                    <a href="#inventory" class="btn btn-primary explore-btn">Explore</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section class="inventory-section" id="inventory">
+        <div class="container">
+            <h2 class="section-title">Our Inventory</h2>
+            <div class="cars-grid">
+                <a href="listings/2022-mercedes-benz-e300l.html" class="car-card">
+                    <div class="car-image">
+                        <img src="https://via.placeholder.com/400x300?text=Mercedes+E300L" alt="2022 Mercedes-Benz E300L">
+                    </div>
+                    <div class="car-info">
+                        <h3>2022 Mercedes-Benz E300L</h3>
+                        <p class="car-price">$75,000</p>
+                        <p class="car-details">Low mileage • Excellent condition</p>
+                    </div>
+                </a>
+                
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://via.placeholder.com/400x300?text=BMW+5+Series" alt="2023 BMW 5 Series">
+                    </div>
+                    <div class="car-info">
+                        <h3>2023 BMW 5 Series</h3>
+                        <p class="car-price">$68,000</p>
+                        <p class="car-details">Premium package • Like new</p>
+                    </div>
+                </div>
+                
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://via.placeholder.com/400x300?text=Audi+A6" alt="2022 Audi A6">
+                    </div>
+                    <div class="car-info">
+                        <h3>2022 Audi A6</h3>
+                        <p class="car-price">$62,000</p>
+                        <p class="car-details">Tech package • Well maintained</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p>AlMahruqi is your trusted partner in finding premium vehicles. With years of experience in the automotive industry, we pride ourselves on offering the finest selection of luxury cars.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Get in touch with us today to find your perfect vehicle.</p>
+            <div class="contact-info">
+                <p>📧 Email: info@almahruqi.com</p>
+                <p>📞 Phone: +968 1234 5678</p>
+                <p>📍 Location: Muscat, Oman</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AlMahruqi Premium Cars. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="almahruqi-scripts.js"></script>
+</body>
+</html>
