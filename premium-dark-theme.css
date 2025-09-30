@@ -1,0 +1,32 @@
+.body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00FF00; /* Neon Green */
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+a {
+  color: #00FFCC; /* Neon Cyan */
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #FF00FF; /* Neon Magenta */
+}
