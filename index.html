@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Car Showcase - Al Mahruqi</title>
+    <link rel="stylesheet" href="car-slider.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <h1>Al Mahruqi <span>Motors</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Revolution Slider -->
+        <section class="revolution-slider" id="home">
+            <div class="slider-container">
+                <!-- Slide 1 -->
+                <div class="slide active" data-slide="1">
+                    <div class="slide-background slide-bg-1">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-text">
+                            <h2 class="slide-title" data-animation="fadeInUp" data-delay="300">Premium Sports Cars</h2>
+                            <p class="slide-subtitle" data-animation="fadeInUp" data-delay="600">Experience Luxury & Performance</p>
+                            <a href="#inventory" class="slide-btn" data-animation="fadeInUp" data-delay="900">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide" data-slide="2">
+                    <div class="slide-background slide-bg-2">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-text">
+                            <h2 class="slide-title" data-animation="zoomIn" data-delay="300">Elegant Sedans</h2>
+                            <p class="slide-subtitle" data-animation="zoomIn" data-delay="600">Comfort Meets Style</p>
+                            <a href="#inventory" class="slide-btn" data-animation="zoomIn" data-delay="900">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide" data-slide="3">
+                    <div class="slide-background slide-bg-3">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-text">
+                            <h2 class="slide-title" data-animation="slideInLeft" data-delay="300">Powerful SUVs</h2>
+                            <p class="slide-subtitle" data-animation="slideInLeft" data-delay="600">Adventure Awaits</p>
+                            <a href="#inventory" class="slide-btn" data-animation="slideInLeft" data-delay="900">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide" data-slide="4">
+                    <div class="slide-background slide-bg-4">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-text">
+                            <h2 class="slide-title" data-animation="fadeInDown" data-delay="300">Electric Future</h2>
+                            <p class="slide-subtitle" data-animation="fadeInDown" data-delay="600">Sustainable Performance</p>
+                            <a href="#inventory" class="slide-btn" data-animation="fadeInDown" data-delay="900">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <div class="slider-nav">
+                    <button class="slider-arrow prev" aria-label="Previous slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-arrow next" aria-label="Next slide">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="slider-pagination">
+                    <button class="pagination-dot active" data-slide="1" aria-label="Go to slide 1"></button>
+                    <button class="pagination-dot" data-slide="2" aria-label="Go to slide 2"></button>
+                    <button class="pagination-dot" data-slide="3" aria-label="Go to slide 3"></button>
+                    <button class="pagination-dot" data-slide="4" aria-label="Go to slide 4"></button>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="slider-progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="inventory">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🚗</div>
+                        <h3>Premium Selection</h3>
+                        <p>Handpicked luxury vehicles from top manufacturers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Quality Assured</h3>
+                        <p>Every vehicle undergoes rigorous inspection</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💎</div>
+                        <h3>Best Value</h3>
+                        <p>Competitive pricing on premium automobiles</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Warranty Included</h3>
+                        <p>Comprehensive coverage for peace of mind</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Al Mahruqi Motors. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="car-slider.js"></script>
+</body>
+</html>
